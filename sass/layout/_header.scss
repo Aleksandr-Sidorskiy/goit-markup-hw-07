@@ -2,32 +2,35 @@ header {
   border-bottom: 1px solid #ececec;
 }
 .header {
-  background-color: #ffffff;
-
   display: flex;
   align-items: center;
+
+  background-color: #ffffff;
 }
 
 .nav {
   display: flex;
   align-items: center;
 }
+
 /* логотип */
 .logo {
-  font-family: "Raleway";
-  font-weight: bold;
-  font-style: normal;
-  font-size: 26px;
-  line-height: 1.19;
+  @extend %logo;
+  // font-family: "Raleway";
+  // font-weight: bold;
+  // font-style: normal;
+  // font-size: 26px;
+  // line-height: 1.19;
   color: var(--text-secondary);
 }
 
 .primery-logo {
-  font-family: "Raleway";
-  font-weight: bold;
-  font-style: normal;
-  font-size: 26px;
-  line-height: 1.19;
+  @extend %logo;
+  // font-family: "Raleway";
+  // font-weight: bold;
+  // font-style: normal;
+  // font-size: 26px;
+  // line-height: 1.19;
   color: var(--fone-color);
 }
 /* навигация */
