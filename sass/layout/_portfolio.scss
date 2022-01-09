@@ -16,24 +16,28 @@
   padding: 6px 22px;
 
   color: var(--text-secondary);
-  font-weight: 500;
-  font-family: "Roboto";
   background-color: #f5f4fa;
-  border-radius: 4px;
   border: none;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.62;
+
+  @extend %button__portfolio;
+  // font-weight: 500;
+  // font-family: "Roboto";
+  // border-radius: 4px;
+  // font-style: normal;
+  // font-size: 16px;
+  // line-height: 1.62;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: var(--fone-color);
+  }
 
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.projekt__button-item:hover,
-.projekt__button-item:focus {
-  color: #ffffff;
-  background-color: var(--fone-color);
-}
+
 .projekt {
   justify-content: center;
 }
@@ -51,6 +55,12 @@
   margin-left: 30px;
   margin-top: 30px;
 
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -58,6 +68,18 @@
 .projekt__box-deskription {
   position: relative;
   overflow: hidden;
+
+  &:hover .tehnokryak,
+  &:hover .poster,
+  &:hover .restaurant,
+  &:hover .prime,
+  &:hover .boxes,
+  &:hover .komp,
+  &:hover .limited-edition,
+  &:hover .lab,
+  &:hover .business {
+    transform: translateY(0%);
+  }
 }
 
 .tehnokryak,
@@ -79,6 +101,19 @@
   padding-left: 27px;
   width: 100%;
   height: 101%;
+
+  &:hover.tehnokryak,
+  .poster,
+  .restaurant,
+  .prime,
+  .boxes,
+  .komp,
+  .limited-edition,
+  .lab,
+  .business {
+    transform: translateY(0%);
+  }
+
   transform: translateY(100%);
   transition-property: transform;
   transition-duration: 250ms;
@@ -92,31 +127,26 @@
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
 }
-.projekt__box-item .projekt__box-deskription:hover .tehnokryak,
-.projekt__box-item .projekt__box-deskription:hover .poster,
-.projekt__box-item .projekt__box-deskription:hover .restaurant,
-.projekt__box-item .projekt__box-deskription:hover .prime,
-.projekt__box-item .projekt__box-deskription:hover .boxes,
-.projekt__box-item .projekt__box-deskription:hover .komp,
-.projekt__box-item .projekt__box-deskription:hover .limited-edition,
-.projekt__box-item .projekt__box-deskription:hover .lab,
-.projekt__box-item .projekt__box-deskription:hover .business {
-  transform: translateY(0%);
-}
-.projekt__box-item:hover,
-.projekt__box-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-/* .projekt-box-list .projekt-box-img {
-  display: block;
-} */
+
+// .projekt__box-item .projekt__box-deskription:hover .tehnokryak,
+// .projekt__box-item .projekt__box-deskription:hover .poster,
+// .projekt__box-item .projekt__box-deskription:hover .restaurant,
+// .projekt__box-item .projekt__box-deskription:hover .prime,
+// .projekt__box-item .projekt__box-deskription:hover .boxes,
+// .projekt__box-item .projekt__box-deskription:hover .komp,
+// .projekt__box-item .projekt__box-deskription:hover .limited-edition,
+// .projekt__box-item .projekt__box-deskription:hover .lab,
+// .projekt__box-item .projekt__box-deskription:hover .business {
+//   transform: translateY(0%);
+// }
+
 .projekt__box-text {
   color: var(--text-primery);
-  font-weight: normal;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.87;
+  @extend %projekt__box-text;
+  // font-weight: normal;
+  // font-style: normal;
+  // font-size: 16px;
+  // line-height: 1.87;
 
   background: #ffffff;
   border: 1px solid #eeeeee;
@@ -124,11 +154,10 @@
   padding: 20px 24px;
 }
 .projekt__box-heading {
-  /* text-align: center; */
-
   color: var(--text-secondary);
-  font-weight: 700;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 2;
+  @extend %projekt__box-heading;
+  // font-weight: 700;
+  // font-style: normal;
+  // font-size: 18px;
+  // line-height: 2;
 }
