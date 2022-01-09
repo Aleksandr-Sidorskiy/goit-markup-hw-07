@@ -38,21 +38,20 @@ header {
   margin-left: 93px;
   display: flex;
 }
+
 .nav__list .nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
 .nav__item {
   align-items: baseline;
-  color: var(--text-secondary);
-  font-weight: 500;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.14;
-}
 
-.nav__position {
-  position: relative;
+  color: var(--text-secondary);
+  @extend %nav;
+  // font-weight: 500;
+  // font-style: normal;
+  // font-size: 14px;
+  // line-height: 1.14;
 }
 
 .nav__link {
@@ -64,11 +63,16 @@ header {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--fone-color);
+  }
 }
-.nav__link:hover,
-.nav__link:focus {
-  color: var(--fone-color);
+
+.nav__position {
+  position: relative;
 }
+
 .nav__position::after {
   position: absolute;
   left: 0;
@@ -92,10 +96,21 @@ header {
   margin-right: 50px;
 
   color: var(--text-primery);
-  font-weight: 500;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.14;
+  @extend %nav;
+  // font-weight: 500;
+  // font-style: normal;
+  // font-size: 14px;
+  // line-height: 1.14;
+
+  &:hover,
+  &:focus {
+    color: var(--fone-color);
+  }
+
+  &:hover .kontacts__svg,
+  &:focus .kontacts__svg {
+    fill: var(--fone-color);
+  }
 
   transition-property: color;
   transition-duration: 250ms;
@@ -105,10 +120,21 @@ header {
 .kontacts__tel {
   align-items: center;
   color: var(--text-primery);
-  font-weight: 500;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.14;
+  @extend %nav;
+  // font-weight: 500;
+  // font-style: normal;
+  // font-size: 14px;
+  // line-height: 1.14;
+
+  &:hover,
+  &:focus {
+    color: var(--fone-color);
+  }
+
+  &:hover .kontacts__svg,
+  &:focus .kontacts__svg {
+    fill: var(--fone-color);
+  }
 
   transition-property: color;
   transition-duration: 250ms;
@@ -121,24 +147,4 @@ header {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.kontacts__email:hover .kontacts__svg,
-.kontacts__email:focus .kontacts__svg {
-  fill: var(--fone-color);
-}
-
-.kontacts__email:hover,
-.kontacts__email:focus {
-  color: var(--fone-color);
-}
-
-.kontacts__tel:hover .kontacts__svg,
-.kontacts__tel:focus .kontacts__svg {
-  fill: var(--fone-color);
-}
-
-.kontacts__tel:hover,
-.kontacts__tel:focus {
-  color: var(--fone-color);
 }
