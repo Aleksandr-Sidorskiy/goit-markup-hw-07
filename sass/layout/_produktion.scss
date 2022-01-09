@@ -4,10 +4,11 @@
   margin-bottom: 50px;
 
   color: var(--text-secondary);
-  font-weight: 700;
-  font-style: normal;
-  font-size: 36px;
-  line-height: 1.16;
+  @extend %title;
+  // font-weight: 700;
+  // font-style: normal;
+  // font-size: 36px;
+  // line-height: 1.16;
 }
 .produktion__list {
   justify-content: center;
@@ -22,7 +23,7 @@
   position: relative;
   overflow: hidden;
 }
-.produktion__item > .produktion__text {
+.produktion__text {
   position: absolute;
   bottom: 0px;
   padding-top: 27px;
@@ -30,12 +31,13 @@
   margin: 0;
   width: 100%;
   z-index: 1;
-
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
   text-align: center;
-  letter-spacing: 0.03em;
+
+  @extend %produktion__text;
+  // font-weight: bold;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
