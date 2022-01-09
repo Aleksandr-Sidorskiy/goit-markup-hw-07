@@ -14,10 +14,11 @@
 }
 .hero__heading {
   text-align: center;
+  @extend %hero;
 
-  font-weight: 900;
-  font-style: normal;
-  font-size: 44px;
-  line-height: 1.36;
+  // font-weight: 900;
+  // font-style: normal;
+  // font-size: 44px;
+  // line-height: 1.36;
   color: #ffffff;
 }
