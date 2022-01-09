@@ -251,10 +251,6 @@ header {
 
 .hero__heading {
   text-align: center;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 44px;
-  line-height: 1.36;
   color: #ffffff;
 }
 
@@ -289,28 +285,19 @@ header {
   border-radius: 4px;
 }
 
-.peculiarities__list .peculiarities__item:not(:last-child) {
+.peculiarities__item:not(:last-child) {
   margin-right: 30px;
 }
 
 .peculiarities__title {
   text-transform: uppercase;
   color: var(--text-secondary);
-  font-weight: 700;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.14;
 }
 
 .peculiarities__text {
   margin-top: 10px;
   width: 270px;
   color: var(--text-primery);
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 /* чем мы занимаемся */
@@ -318,10 +305,6 @@ header {
   text-align: center;
   margin-bottom: 50px;
   color: var(--text-secondary);
-  font-weight: 700;
-  font-style: normal;
-  font-size: 36px;
-  line-height: 1.16;
 }
 
 .produktion__list {
@@ -346,7 +329,7 @@ header {
   overflow: hidden;
 }
 
-.produktion__item > .produktion__text {
+.produktion__text {
   position: absolute;
   bottom: 0px;
   padding-top: 27px;
@@ -354,11 +337,7 @@ header {
   margin: 0;
   width: 100%;
   z-index: 1;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
   text-align: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
@@ -369,10 +348,6 @@ header {
   text-align: center;
   margin-bottom: 50px;
   color: var(--text-secondary);
-  font-weight: 700;
-  font-style: normal;
-  font-size: 36px;
-  line-height: 1.16;
 }
 
 .comand__list {
@@ -381,7 +356,7 @@ header {
   display: flex;
 }
 
-.comand__name {
+.comand__img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -400,33 +375,22 @@ header {
   background-color: #ffffff;
 }
 
-/* .comand > li > .comand-name-box > h3 {
-
+.comand__name {
   color: var(--text-secondary);
-  font-weight: 500;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.18;
-} */
+}
+
 .comand__position {
   padding-top: 10px;
   color: var(--text-primery);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  /* identical to box height */
-  text-align: center;
-  letter-spacing: 0.03em;
 }
 
-.comand .comand__name {
+.comand__img {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
 
-.comand .comand__name:not(:last-child) {
+.comand__img:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -469,9 +433,7 @@ header {
        -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.comand__social-link:focus,
-.comand__social-link:hover {
+.comand__social-link:focus, .comand__social-link:hover {
   background-color: var(--fone-color);
   fill: #ffffff;
 }
@@ -481,10 +443,6 @@ header {
   text-align: center;
   margin-bottom: 50px;
   color: var(--text-secondary);
-  font-weight: 700;
-  font-style: normal;
-  font-size: 36px;
-  line-height: 1.16;
 }
 
 .client__list {
@@ -529,9 +487,7 @@ header {
        -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.client__link:focus,
-.client__link:hover {
+.client__link:focus, .client__link:hover {
   border: 1px solid var(--fone-color);
   fill: var(--fone-color);
 }
@@ -555,39 +511,21 @@ header {
 
 .logo-primery {
   color: var(--fone-color);
-  font-weight: 700;
-  font-family: "Raleway";
-  font-style: normal;
-  font-size: 26px;
-  line-height: 1.19;
 }
 
 .logo-secondary {
   color: #ffffff;
-  font-family: "Raleway";
-  font-weight: 700;
-  font-style: normal;
-  font-size: 26px;
-  line-height: 1.19;
 }
 
 .footer__addres {
   margin-top: 20px;
   color: #ffffff;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
 }
 
 .footer__kontakts {
   margin-top: 9px;
   display: block;
   color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
 }
 
 /* присоединяйтесь */
@@ -597,11 +535,6 @@ header {
 
 .join__heading {
   margin-bottom: 20px;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #ffffff;
 }
 
@@ -640,9 +573,7 @@ header {
        -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.join__social-link:focus,
-.join__social-link:hover {
+.join__social-link:focus, .join__social-link:hover {
   background-color: var(--fone-color);
   fill: #ffffff;
 }
@@ -653,10 +584,6 @@ header {
 }
 
 .mailing {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
   color: #ffffff;
 }
 
@@ -756,7 +683,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* position: relative; */
 }
 
 .mailing__img {
@@ -785,14 +711,8 @@ header {
 .projekt__button-item {
   padding: 6px 22px;
   color: var(--text-secondary);
-  font-weight: 500;
-  font-family: "Roboto";
   background-color: #f5f4fa;
-  border-radius: 4px;
   border: none;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.62;
   -webkit-transition-property: color, background-color;
   -o-transition-property: color, background-color;
   transition-property: color, background-color;
@@ -803,9 +723,7 @@ header {
        -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.projekt__button-item:hover,
-.projekt__button-item:focus {
+.projekt__button-item:hover, .projekt__button-item:focus {
   color: #ffffff;
   background-color: var(--fone-color);
 }
@@ -845,10 +763,19 @@ header {
        -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.projekt__box-item:hover, .projekt__box-item:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .projekt__box-deskription {
   position: relative;
   overflow: hidden;
+}
+.projekt__box-deskription:hover .tehnokryak, .projekt__box-deskription:hover .poster, .projekt__box-deskription:hover .restaurant, .projekt__box-deskription:hover .prime, .projekt__box-deskription:hover .boxes, .projekt__box-deskription:hover .komp, .projekt__box-deskription:hover .limited-edition, .projekt__box-deskription:hover .lab, .projekt__box-deskription:hover .business {
+  -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+          transform: translateY(0%);
 }
 
 .tehnokryak,
@@ -895,36 +822,94 @@ header {
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
 }
-
-.projekt__box-item .projekt__box-deskription:hover .tehnokryak,
-.projekt__box-item .projekt__box-deskription:hover .poster,
-.projekt__box-item .projekt__box-deskription:hover .restaurant,
-.projekt__box-item .projekt__box-deskription:hover .prime,
-.projekt__box-item .projekt__box-deskription:hover .boxes,
-.projekt__box-item .projekt__box-deskription:hover .komp,
-.projekt__box-item .projekt__box-deskription:hover .limited-edition,
-.projekt__box-item .projekt__box-deskription:hover .lab,
-.projekt__box-item .projekt__box-deskription:hover .business {
+.tehnokryak:hover.tehnokryak,
+.tehnokryak .poster,
+.tehnokryak .restaurant,
+.tehnokryak .prime,
+.tehnokryak .boxes,
+.tehnokryak .komp,
+.tehnokryak .limited-edition,
+.tehnokryak .lab,
+.tehnokryak .business,
+.poster:hover.tehnokryak,
+.poster .poster,
+.poster .restaurant,
+.poster .prime,
+.poster .boxes,
+.poster .komp,
+.poster .limited-edition,
+.poster .lab,
+.poster .business,
+.restaurant:hover.tehnokryak,
+.restaurant .poster,
+.restaurant .restaurant,
+.restaurant .prime,
+.restaurant .boxes,
+.restaurant .komp,
+.restaurant .limited-edition,
+.restaurant .lab,
+.restaurant .business,
+.prime:hover.tehnokryak,
+.prime .poster,
+.prime .restaurant,
+.prime .prime,
+.prime .boxes,
+.prime .komp,
+.prime .limited-edition,
+.prime .lab,
+.prime .business,
+.boxes:hover.tehnokryak,
+.boxes .poster,
+.boxes .restaurant,
+.boxes .prime,
+.boxes .boxes,
+.boxes .komp,
+.boxes .limited-edition,
+.boxes .lab,
+.boxes .business,
+.komp:hover.tehnokryak,
+.komp .poster,
+.komp .restaurant,
+.komp .prime,
+.komp .boxes,
+.komp .komp,
+.komp .limited-edition,
+.komp .lab,
+.komp .business,
+.limited-edition:hover.tehnokryak,
+.limited-edition .poster,
+.limited-edition .restaurant,
+.limited-edition .prime,
+.limited-edition .boxes,
+.limited-edition .komp,
+.limited-edition .limited-edition,
+.limited-edition .lab,
+.limited-edition .business,
+.lab:hover.tehnokryak,
+.lab .poster,
+.lab .restaurant,
+.lab .prime,
+.lab .boxes,
+.lab .komp,
+.lab .limited-edition,
+.lab .lab,
+.lab .business,
+.business:hover.tehnokryak,
+.business .poster,
+.business .restaurant,
+.business .prime,
+.business .boxes,
+.business .komp,
+.business .limited-edition,
+.business .lab,
+.business .business {
   -webkit-transform: translateY(0%);
       -ms-transform: translateY(0%);
           transform: translateY(0%);
 }
 
-.projekt__box-item:hover,
-.projekt__box-item:focus {
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-/* .projekt-box-list .projekt-box-img {
-  display: block;
-} */
 .projekt__box-text {
   color: var(--text-primery);
-  font-weight: normal;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.87;
   background: #ffffff;
   border: 1px solid #eeeeee;
   -webkit-box-sizing: border-box;
@@ -933,12 +918,7 @@ header {
 }
 
 .projekt__box-heading {
-  /* text-align: center; */
   color: var(--text-secondary);
-  font-weight: 700;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 2;
 }
 
 /* Модальное окно */
@@ -1227,7 +1207,7 @@ header {
   cursor: pointer;
 }
 
-.logo, .primery-logo {
+.logo, .primery-logo, .logo-primery, .logo-secondary {
   font-family: "Raleway";
   font-weight: bold;
   font-style: normal;
@@ -1241,4 +1221,90 @@ header {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.hero__heading {
+  font-weight: 900;
+  font-style: normal;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+}
+
+.peculiarities__title {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.peculiarities__text {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.produktion__heading, .comand__heading, .client__heading {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+.produktion__text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.comand__name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+}
+
+.footer__addres, .footer__kontakts {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.join__heading, .mailing {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.03em;
+}
+
+.projekt__button-item {
+  font-weight: 500;
+  font-family: "Roboto";
+  border-radius: 4px;
+  border: none;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.projekt__box-heading {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.projekt__box-text {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.87;
 }/*# sourceMappingURL=main.css.map */
