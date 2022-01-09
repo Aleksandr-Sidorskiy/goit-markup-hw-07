@@ -18,26 +18,28 @@
   border-radius: 4px;
 }
 
-.peculiarities__list .peculiarities__item:not(:last-child) {
+.peculiarities__item:not(:last-child) {
   margin-right: 30px;
 }
 
 .peculiarities__title {
   text-transform: uppercase;
   color: var(--text-secondary);
-  font-weight: 700;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.14;
+  @extend %peculiarities__title;
+  // font-weight: 700;
+  // font-style: normal;
+  // font-size: 14px;
+  // line-height: 1.14;;;;
 }
 
 .peculiarities__text {
   margin-top: 10px;
   width: 270px;
   color: var(--text-primery);
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @extend %peculiarities__text;
+  // font-weight: 400;
+  // font-style: normal;
+  // font-size: 14px;
+  // line-height: 1.71;
+  // letter-spacing: 0.03em;;;
 }
