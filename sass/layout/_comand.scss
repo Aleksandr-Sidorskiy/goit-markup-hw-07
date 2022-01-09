@@ -4,16 +4,17 @@
   margin-bottom: 50px;
 
   color: var(--text-secondary);
-  font-weight: 700;
-  font-style: normal;
-  font-size: 36px;
-  line-height: 1.16;
+  @extend %title;
+  // font-weight: 700;
+  // font-style: normal;
+  // font-size: 36px;
+  // line-height: 1.16;
 }
 .comand__list {
   display: flex;
 }
 
-.comand__name {
+.comand__img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -29,32 +30,25 @@
   text-align: center;
   background-color: #ffffff;
 }
-/* .comand > li > .comand-name-box > h3 {
-
+.comand__name {
   color: var(--text-secondary);
-  font-weight: 500;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.18;
-} */
+  @extend %comand__name;
+}
 
 .comand__position {
   padding-top: 10px;
 
   color: var(--text-primery);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  /* identical to box height */
-
-  text-align: center;
-  letter-spacing: 0.03em;
+  // font-style: normal;
+  // font-weight: normal;
+  // font-size: 16px;
+  // line-height: 19px;
+  // letter-spacing: 0.03em;
 }
-.comand .comand__name {
+.comand__img {
   justify-content: space-evenly;
 }
-.comand .comand__name:not(:last-child) {
+.comand__img:not(:last-child) {
   margin-right: 30px;
 }
 .comand__social-list {
@@ -76,13 +70,13 @@
   border-radius: 50%;
   fill: #afb1b8;
 
+  &:focus,
+  &:hover {
+    background-color: var(--fone-color);
+    fill: #ffffff;
+  }
+
   transition-property: fill, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.comand__social-link:focus,
-.comand__social-link:hover {
-  background-color: var(--fone-color);
-  fill: #ffffff;
 }
