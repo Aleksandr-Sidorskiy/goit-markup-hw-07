@@ -132,14 +132,6 @@ header {
       -ms-flex-align: baseline;
           align-items: baseline;
   color: var(--text-secondary);
-  font-weight: 500;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.14;
-}
-
-.nav__position {
-  position: relative;
 }
 
 .nav__link {
@@ -157,10 +149,12 @@ header {
        -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.nav__link:hover,
-.nav__link:focus {
+.nav__link:hover, .nav__link:focus {
   color: var(--fone-color);
+}
+
+.nav__position {
+  position: relative;
 }
 
 .nav__position::after {
@@ -190,10 +184,6 @@ header {
           align-items: center;
   margin-right: 50px;
   color: var(--text-primery);
-  font-weight: 500;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.14;
   -webkit-transition-property: color;
   -o-transition-property: color;
   transition-property: color;
@@ -204,16 +194,18 @@ header {
        -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.kontacts__email:hover, .kontacts__email:focus {
+  color: var(--fone-color);
+}
+.kontacts__email:hover .kontacts__svg, .kontacts__email:focus .kontacts__svg {
+  fill: var(--fone-color);
+}
 
 .kontacts__tel {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   color: var(--text-primery);
-  font-weight: 500;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.14;
   -webkit-transition-property: color;
   -o-transition-property: color;
   transition-property: color;
@@ -223,6 +215,12 @@ header {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
        -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.kontacts__tel:hover, .kontacts__tel:focus {
+  color: var(--fone-color);
+}
+.kontacts__tel:hover .kontacts__svg, .kontacts__tel:focus .kontacts__svg {
+  fill: var(--fone-color);
 }
 
 .kontacts__svg {
@@ -237,26 +235,6 @@ header {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
        -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.kontacts__email:hover .kontacts__svg,
-.kontacts__email:focus .kontacts__svg {
-  fill: var(--fone-color);
-}
-
-.kontacts__email:hover,
-.kontacts__email:focus {
-  color: var(--fone-color);
-}
-
-.kontacts__tel:hover .kontacts__svg,
-.kontacts__tel:focus .kontacts__svg {
-  fill: var(--fone-color);
-}
-
-.kontacts__tel:hover,
-.kontacts__tel:focus {
-  color: var(--fone-color);
 }
 
 /* главный заголовок Эффективные решения для вашего бизнеса */
@@ -1255,4 +1233,12 @@ header {
   font-style: normal;
   font-size: 26px;
   line-height: 1.19;
+}
+
+.nav__item, .kontacts__email, .kontacts__tel {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }/*# sourceMappingURL=main.css.map */
